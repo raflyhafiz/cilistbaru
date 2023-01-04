@@ -10,7 +10,7 @@ Simple CRUD app built with MySQL, ExpressJS, React, & Node.Edit
 # Setup
 
 ## Database
-First you need to create database & user in MySQL in order to connect `Backend` to `Database` aaaabbbbcccddd.
+First you need to create database & user in MySQL in order to connect `Backend` to `Database` aaaabbbbcccdddeee.
 
 ```
 sudo mysql -u root -p
