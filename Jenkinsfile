@@ -27,10 +27,10 @@ pipeline {
         steps {
             script {
              if (env.BRANCH_NAME == 'staging') {
-            sh 'docker push rafly21/be-cilist:0.0.$BUILD_NUMBER-staging'
+            sh 'docker push rafly21/be-cilistbaru:0.0.$BUILD_NUMBER-staging'
                 }
                 else if (env.BRANCH_NAME == 'master') {
-            sh 'docker push rafly21/be-cilist:0.0.$BUILD_NUMBER-master' 
+            sh 'docker push rafly21/be-cilistbaru:0.0.$BUILD_NUMBER-master' 
                 }
                 else {
                     sh 'echo Nothing to Push'
@@ -61,10 +61,10 @@ pipeline {
         steps {
             script {
              if (env.BRANCH_NAME == 'staging') {
-            sh 'docker push rafly21/fe-cilist:0.0.$BUILD_NUMBER-staging'
+            sh 'docker push rafly21/fe-cilistbaru:0.0.$BUILD_NUMBER-staging'
                 }
                 else if (env.BRANCH_NAME == 'master') {
-            sh 'docker push rafly21/fe-cilist:0.0.$BUILD_NUMBER-master' 
+            sh 'docker push rafly21/fe-cilistbaru:0.0.$BUILD_NUMBER-master' 
                 }
                 else {
                     sh 'echo Nothing to Push'
