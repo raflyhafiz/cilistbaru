@@ -9,12 +9,12 @@ pipeline {
             script{
                 if (env.BRANCH_NAME == 'staging') {
                     dir('backend'){
-                        sh 'docker build -t rafly21/be-cilist:0.0.$BUILD_NUMBER-staging .'
+                        sh 'docker build -t rafly21/be-cilistbaru:0.0.$BUILD_NUMBER-staging .'
                     }
                 }
                 else if (env.BRANCH_NAME == 'master') {
                     dir('backend'){
-                         sh 'docker build -t rafly21/be-cilist:0.0.$BUILD_NUMBER-master .' 
+                         sh 'docker build -t rafly21/be-cilistbaru:0.0.$BUILD_NUMBER-master .' 
                     }
                 }
                 else {
@@ -43,12 +43,12 @@ pipeline {
             script{
                 if (env.BRANCH_NAME == 'staging') {
                     dir('frontend'){
-                        sh 'docker build -t rafly21/fe-cilist:0.0.$BUILD_NUMBER-staging .'
+                        sh 'docker build -t rafly21/fe-cilistbaru:0.0.$BUILD_NUMBER-staging .'
                     }
                 }
                 else if (env.BRANCH_NAME == 'master') {
                     dir('frontend'){
-                         sh 'docker build -t rafly21/fe-cilist:0.0.$BUILD_NUMBER-master .' 
+                         sh 'docker build -t rafly21/fe-cilistbaru:0.0.$BUILD_NUMBER-master .' 
                     }
                 }
                 else {
