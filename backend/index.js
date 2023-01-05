@@ -9,22 +9,7 @@ dotenv.config()
 const BASE_URL_PORT = process.env.BASE_URL_PORT
 
 const app = express();
-const corsOpts = {
-    origin: '*',
-  
-    methods: [
-      'GET',
-      'POST',
-    ],
-  
-    allowedHeaders: [
-      'Content-Type',
-    ],
-  };
-  
-  app.use(cors(corsOpts));
-  
-//app.use(cors());
+app.use(cors());
 app.use(express.json());
 app.use(UserRoute);
 
